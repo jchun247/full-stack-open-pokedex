@@ -31,13 +31,10 @@ module.exports = {
     "quotes": [
       "error",
       "double",
-      {
-        "avoidEscape": true
-      }
     ],
     "semi": [
       "error",
-      "never"
+      "always"
     ],
     "eqeqeq": "error",
     "no-trailing-spaces": "error",
@@ -47,7 +44,7 @@ module.exports = {
     "arrow-spacing": [
       "error", { "before": true, "after": true }
     ],
-    "no-console": "off",
+    "no-console": "error",
     "react/prop-types": 0
   }
-}
+};
