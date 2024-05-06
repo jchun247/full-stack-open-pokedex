@@ -25,15 +25,6 @@ jobs:
         env:
           COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
         run: echo "$COMMIT_MESSAGES"
-  # check-for-skip:
-  #   runs-on: ubuntu-20.04
-  #   outputs:
-  #     skip: ${{ steps.skip.outputs.skip }}
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - id: skip
-  #       env:
-  #         COMMIT_MESSAGES: ${{ toJson(github.event.commits.*.message) }}
   simple_deployment_pipeline:
     runs-on: ubuntu-20.04
     steps:
