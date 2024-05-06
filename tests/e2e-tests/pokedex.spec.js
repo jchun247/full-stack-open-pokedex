@@ -1,9 +1,6 @@
 const { test, describe, expect } = require("@playwright/test");
 
 describe("Pokedex", () => {
-  // beforeEach(async ({ page }) => {
-  //   await page.goto("");
-  // });
 
   test("front page can be opened", async ({ page }) => {
     await page.goto("");
